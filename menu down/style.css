@@ -1,0 +1,42 @@
+.category{
+margin: 0 auto;
+width: 30rem;
+font-size: 2rem;
+}
+
+.head{
+display: flex;
+background-color: rgba(43, 42, 42, 0.715);
+justify-content: space-between;
+padding: 1rem 3rem;
+cursor: pointer;
+border-radius: 5rem;
+color:#fff;
+
+}
+.category .options{
+    opacity: 0;
+    width: 0;
+    height: 0;
+    pointer-events: none;
+    margin-top: .8 rem;
+transition: .8s ease-in-out;
+
+}
+.options .option{
+padding: 1rem 3rem;
+background-color: rgb(173, 173, 147);
+border-radius: 5rem;
+color: #fff;
+cursor: pointer;
+
+}
+.options .option:not(:last-child){
+border-bottom: 2px solid black;
+}
+.category.active .options{
+    opacity: 1;
+    width: 100%;
+    height: auto;
+    pointer-events: all;
+}
