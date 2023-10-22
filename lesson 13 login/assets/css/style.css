@@ -1,0 +1,136 @@
+*{
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+list-style: none;
+text-decoration: none;
+}
+
+body{
+background-color: rgb(159, 80, 232);
+font-size: 1.4rem;
+}
+
+
+section{
+width: 100%;
+
+}
+
+.container{
+background-color: #fff;
+width: 50%;
+margin: 0 auto;
+border-radius: .5rem;
+text-align: center;
+}
+.input__container input{
+padding: 1rem 2rem;
+outline: none;
+width: 100%;
+font-size: 1.4rem;
+}
+
+.login__text{
+    font-weight: 900;
+    font-size: 2.5rem;
+}
+
+
+.input__container{
+display: flex;
+flex-direction: column;
+width: 90%;
+margin: 0 auto;
+justify-content: center;
+gap: 2rem;
+margin-top: 2rem;
+position: relative;
+}
+
+.input__email--contianer,.input__password--contianer{
+width: 100%;
+display:flex;
+position: relative;
+align-items: center;
+
+}
+.icon{
+position: absolute;
+z-index: 100;
+left: .3rem;
+top: 1.2rem;
+cursor: pointer;
+}
+
+.remember__container{
+width: 90%;
+display: flex;
+justify-content: space-between;
+margin: 0 auto;
+margin-top: 1rem;
+
+}
+.checkbox__remember{
+display: flex;
+gap: 1rem;
+
+}
+.remember__container input{
+width: 1rem;
+}
+.remember__container span{
+opacity: .7;
+}
+.remember__container a{
+color: blue;
+font-weight: 900;
+}
+
+.login__button{
+width: 90%;
+padding: 1rem;
+border-radius:3rem;
+background-color:rgb(84, 84, 207);
+color:#fff;
+font-size: 1.4rem;
+cursor: pointer;
+margin-top: 2rem;
+}
+
+.account__container{
+display: flex;
+justify-content: center;
+margin: 0 auto;
+width: 90%;
+margin-top: 2rem;
+}
+.line__write{
+width: 90%;
+margin: 0 auto;
+margin-top: 1rem;
+}
+.line__write--text{
+display: grid;
+grid-template-columns: repeat(3,1fr);
+align-items:center;
+}
+.line__write--text::after,.line__write--text::before{
+content:"";
+display: block;
+background-color: black;
+height: 2px;
+opacity: .4;
+}
+
+
+.brend__logo{
+margin-top: 2rem;
+display: flex;
+gap: 2rem;
+justify-content: center;
+}
+
+.brend__logo--child{
+width: 80%;
+}

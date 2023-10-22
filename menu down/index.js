@@ -9,10 +9,10 @@ head.addEventListener('click',function(e){
 });
 
 
-options.forEach((option)=>{
-    option.addEventListener('click',function(e){
+option.forEach((option1)=>{
+    option1.addEventListener('click',function(e){
         headText.innerText=e.target.textContent
-        console.log(target.textContent);
+        console.log(e.target.textContent);
     })
 })
     
