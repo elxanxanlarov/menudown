@@ -1,0 +1,33 @@
+*{
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+
+}
+
+.container{
+width: 40%;
+margin: 4rem auto;
+
+}
+.selected{
+background-color: rgb(127, 227, 227);
+padding: 1rem;
+display: flex;
+justify-content: space-between;
+cursor: pointer;
+
+}
+.option{
+background-color:burlywood;
+padding: 1rem;
+cursor: pointer;
+}
+
+.hidden{
+opacity: 0;
+pointer-events: none;
+
+}
+
+
