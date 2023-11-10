@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./assets/css/style.css" />
+    <!-- Ion icon cdn -->
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+  </head>
+  <body>
+    <!--!  Header  start-->
+
+    <header class="header container">
+      <h1 class="header__h1">Where in the world?</h1>
+      <div class="dark__mode__container">
+        <ion-icon class="dark__mode__icon" name="moon-outline"></ion-icon>
+        <p class="dark__mode__text">Dark Mode</p>
+      </div>
+    </header>
+    <!--!  Header  end -->
+    <!--!  search and filter  start-->
+    <section class="section container">
+      <label for="" class="section__label">
+        <ion-icon name="search-sharp" class="section__label__input"></ion-icon>
+        <input 
+        type="text" 
+        class="section__label__input" 
+        placeholder="Search for a country…"
+        />
+      </label>
+    </section>
+
+    <!--!  search and filter end  -->
+
+    <script src="./assets/js/app.js"></script>
+  </body>
+</html>
