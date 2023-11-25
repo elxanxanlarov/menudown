@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./assets/css/style.css" />
+  </head>
+  <body>
+    <div class="container__box">
+      <!-- ! Header start -->
+
+      <header class="header">
+        <div class="header__container">
+          <div class="header__step__box">
+            <p class="step__circle item__center circle__bg__check">1</p>
+            <div class="header__step__text--box">
+              <p class="header__step__text--first">STEP 1</p>
+              <p class="header__step__text--second">YOUR INFO</p>
+            </div>
+          </div>
+          <div class="header__step__box ">
+            <p class="step__circle ">2</p>
+            <div class="header__step__text--box">
+              <p class="header__step__text--first">STEP 2</p>
+              <p class="header__step__text--second">SELECT PLAN</p>
+            </div>
+          </div>
+          <div class="header__step__box">
+            <p class="step__circle">3</p>
+            <div class="header__step__text--box">
+              <p class="header__step__text--first">STEP 3</p>
+              <p class="header__step__text--second">ADD-ONS</p>
+            </div>
+          </div>
+          <div class="header__step__box">
+            <p class="step__circle">4</p>
+            <div class="header__step__text--box">
+              <p class="header__step__text--first">STEP 4</p>
+              <p class="header__step__text--second">SUMMARY</p>
+            </div>
+          </div>
+        </div>
+        <div class="header__bg__img__box wd--100">
+          <img
+            src="./assets/images/header-bg.svg"
+            alt=""
+            class="header__bg__img wd--100"
+          />
+        </div>
+      </header>
+      <!-- ! Header end -->
+
+      <main>
+        <!-- ! step1 start -->
+        <div class="step-info1 wd--100  ">
+                <div class="step1__h1__box">
+                    <h1 class="step1__h1">Personal info</h1>
+                    <p class="step1__h1__info">Please provide your name, email address, and phone number.</p>
+                </div>
+                <form action="" class="form wd--100">
+                    <label for="" class="name__label label wd--100">
+                        <p class=" label__text">
+                            Name</p>
+                        <input type="text" name="" id="" 
+                        placeholder="e.g. Stephen King" 
+                        class="text__input label__input wd--100">
+                    </label>
+                    <label for="" class="email__label label wd--100">
+                        <p class="email label__text">
+                            Email Address</p>
+                        <input type="email" name="" id="" 
+                        placeholder="e.g. Stephen King"
+                         class="email__input label__input wd--100">
+                    </label>
+                    <label for="" class="number__label label wd--100">
+                        <p class="number__text label__text">Phone Number</p>
+                        <input type="number" class: name="" id="" 
+                        placeholder="e.g. Stephen King" 
+                        class="number__input label__input wd--100">
+                    </label>
+                    
+                </form>
+                <div class="button__box button__box__step1 ">
+                    <button class="button button__step1">Next Step</button>
+                </div>
+                
+            </div>
+        <!-- ! step1 end -->
+
+        <!-- ! step2 start -->
+        <div class="step-info2 dp__none">
+          <div class="step__h1__box">
+            <h1 class="step__h1">Select your plan</h1>
+            <p class="step__h1__info">
+              You have the option of monthly or yearly billing.
+            </p>
+          </div>
+          <div class="step2__content__box">
+            <div class="step2__content">
+              <div>
+                <img src="./assets/images/step2__content__img1.svg" alt="" />
+              </div>
+
+              <div class="step2__content__text__box">
+                <p class="step2__content__text__first">Arcade</p>
+                <p class="step2__content__text__second">$9/mo</p>
+              </div>
+            </div>
+            <div class="step2__content">
+              <div>
+                <img src="./assets/images/step2__content__img2.svg" alt="" />
+              </div>
+
+              <div class="step2__content__text__box">
+                <p class="step2__content__text__first">Advanced</p>
+                <p class="step2__content__text__second">$12/mo</p>
+              </div>
+            </div>
+            <div class="step2__content">
+              <div>
+                <img src="./assets/images/step2__content__img3.svg" alt="" />
+              </div>
+
+              <div class="step2__content__text__box">
+                <p class="step2__content__text__first">Pro</p>
+                <p class="step2__content__text__second">$15/mo</p>
+              </div>
+            </div>
+
+            <div class="button__box__step2">
+              <div class="go__back__button__box">
+                <p class="go__back__button">Go Back</p>
+              </div>
+              <button class="button button__step1">Next Step</button>
+            </div>
+          </div>
+          <div class="step2__change__box">
+            <p class="step2__change__month">Monthly</p>
+            <div class="step2__change__button__box">
+              <input type="checkbox" id="check" />
+              <label for="check" class="change__button"></label>
+            </div>
+            <p class="step2__change__year">Yearly</p>
+          </div>
+        </div>
+        <!-- ! step2 end -->
+
+        <!-- ! step3 start -->
+        <div class="step-info3 dp__none ">
+          <div class="step__h1__box">
+            <h1 class="step__h1">Pick add-ons</h1>
+            <p class="step__h1__info">
+              Add-ons help enhance your gaming experience.
+            </p>
+          </div>
+          <div class="step3__contents__container">
+            <label for="check1" class="step3__content__label1">
+                <div class="step3__content">
+                  <div class="step3__content__checked__box">
+                    <input type="checkbox" class="step3__check__input" id="check1"/>
+                  </div>
+                  <div class="step3__content__texts__box">
+                    <p class="step3__content__text__first">Online service</p>
+                    <p class="step3__content__text__second">
+                      Access to multiplayer games
+                    </p>
+                  </div>
+                  <div class="step3__content__month__box">
+                    <p class="step3__content__month__text">+$1/mo</p>
+                  </div>
+                </div>
+            </label >
+
+
+          <label for="check2">
+              <div class="step3__content">
+                <div class="step3__content__checked__box">
+                  <input type="checkbox" 
+                  class="step3__check__input" id="" />
+                </div>
+                <div class="step3__content__texts__box">
+                  <p class="step3__content__text__first">Online service</p>
+                  <p class="step3__content__text__second">
+                    Access to multiplayer games
+                  </p>
+                </div>
+                <div class="step3__content__month__box">
+                  <p class="step3__content__month__text">+$1/mo</p>
+                </div>
+              </div>
+          </label >
+
+
+        <label for="check3">
+                <div class="step3__content ">
+                  <div class="step3__content__checked__box">
+                    <input type="checkbox" class="step3__check__input"
+                    id="check3" />
+                  </div>
+                  <div class="step3__content__texts__box">
+                    <p class="step3__content__text__first">Online service</p>
+                    <p class="step3__content__text__second">
+                      Access to multiplayer games
+                    </p>
+                  </div>
+                  <div class="step3__content__month__box">
+                    <p class="step3__content__month__text">+$1/mo</p>
+                  </div>
+                </div>
+        </label >
+
+
+            <div class="button__box__step2">
+              <div class="go__back__button__box">
+                <p class="go__back__button">Go Back</p>
+              </div>
+              <button class="button button__step1">Next Step</button>
+            </div>
+          </div>
+        </div>
+        <!-- ! step3 end -->
+
+        <!-- ! step4 start -->
+        <div class="step-info4 dp__none">
+          <div class="step__h1__box">
+            <h1 class="step__h1">Finishing up</h1>
+            <p class="step__h1__info">
+              Double-check everything looks OK before confirming.
+            </p>
+          </div>
+          <div class="step4__content__container">
+            <div class="step4__content__box">
+              <div class="step4__content__text__box wd--100">
+                <p class="step4__content__text__first">Arcade (Monthly)</p>
+                <p class="step4__content__text__second outline">Change</p>
+                <p class="step4__content__line"></p>
+              </div>
+              <div class="step4__month__box">
+                <p class="step4__month__first">$9/mo</p>
+              </div>
+            </div>
+            <div class="step4__content__box">
+              <div class="step4__content__text__box">
+                <p class="step4__content__text__second">Online service</p>
+              </div>
+              <div class="step4__month__box">
+                <p class="step4__month">+$1/mo</p>
+              </div>
+            </div>
+            <div class="step4__content__box">
+              <div class="step4__content__text__box">
+                <p class="step4__content__text__second">Larger storage</p>
+              </div>
+              <div class="step4__month__box">
+                <p class="step4__month">+$2/mo</p>
+              </div>
+            </div>
+            <div class="step4__content__box">
+              <div class="step4__content__text__box">
+                <p class="step4__content__text__second">Total (per month)</p>
+              </div>
+              <div class="step4__month__box">
+                <p class="step4__month__last">+$12/mo</p>
+              </div>
+            </div>
+            <div class="button__box__step2">
+              <div class="go__back__button__box">
+                <p class="go__back__button">Go Back</p>
+              </div>
+              <button class="button button__step1">Next Step</button>
+            </div>
+          </div>
+        </div>
+        <!-- ! step4 end -->
+        <!-- ! step5 start -->
+        <div class="step-info5  dp__none">
+          <div class="step-info5__container">
+            <div class="step5__img__box">
+              <img
+                src="./assets/images/step5__check.svg"
+                alt=""
+                class="step5__img__check"
+              />
+            </div>
+            <h2 class="step5__h2">Thank you!</h2>
+            <p class="step5__info__text">
+              Thanks for confirming your subscription! We hope you have fun using
+              our platform. If you ever need support, please feel free to email us
+              at support@loremgaming.com.
+            </p>
+            <div>
+          </div>
+        <!-- ! step5 end -->
+      </main>
+    </div>
+  </body>
+</html>

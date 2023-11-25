@@ -24,18 +24,68 @@
     <!--!  Header  end -->
     <!--!  search and filter  start-->
     <section class="section container">
-      <label for="" class="section__label">
+      <label for="country" class="section__label">
         <ion-icon name="search-sharp" class="section__label__input"></ion-icon>
         <input 
         type="text" 
+        id="country"
         class="section__label__input" 
         placeholder="Search for a country…"
         />
       </label>
+      <div class="filter__container">
+
+
+
+        <div class="filter__head">
+          <span class="filter__head__text">Filter by Region</span>
+          <ion-icon name="chevron-down-outline"
+          class="filter__head__icon"
+          ></ion-icon>
+        </div>
+
+
+
+        <div class="filter__options ">
+          <div class="filter__option">Africa</div>
+          <div class="filter__option">America</div>
+          <div class="filter__option">Asia</div>
+          <div class="filter__option">Europe</div>
+          <div class="filter__option">Oceania</div>
+        </div>
+
+
+
+      </div>
     </section>
 
     <!--!  search and filter end  -->
 
+
+
+
+    <!--!  main start -->
+    
+    <main class="main container">
+  <a class="card__a">
+        <div class="card__container">
+          <div class="card__img__container">
+            <img src="https://flagcdn.com/ax.svg" alt="" class="card__img">
+          </div>
+          <div class="card__info__container">
+            <p class="country__name">Germany</p>
+            <div class="country__info">
+              <p>Population: <span>81,770,900</span></p>
+              <p>Region:<span>Europe</span></p>
+              <p>Capital:<span> Berlin</span></p>
+            </div>
+          </div>
+        </div>
+  </a >
+    </main>
+    
+    <!--!  main end  -->
     <script src="./assets/js/app.js"></script>
+    <script src="./assets/js/dropdown.js"></script>
   </body>
 </html>
