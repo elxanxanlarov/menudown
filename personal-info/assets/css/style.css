@@ -22,6 +22,7 @@ background-color:var(--bg-color)
     --Purple:#483EFF;
     --Very-Light-Grey: #F8F9FF;
     --circle-bg-check:#BEE2FD;
+    --red-color:red;
 }
 
 .item__center{
@@ -32,6 +33,9 @@ background-color:var(--bg-color)
 
 .wd--100{
 width: 100%;
+}
+.res__bg__blue{
+display: none;
 }
 .container__box{
     width: 60%;
@@ -98,7 +102,9 @@ display: flex;
 flex-direction: column;
 gap: .3rem;
 }
-
+.res__img__header{
+display: none;
+}
 
 /* !Header end */
 
@@ -130,10 +136,16 @@ gap: .7rem;
 .step__h1__info{
     color:var(--Grey-color)
 }
-.form{
+.step1__form{
 padding-top:2.5rem ;
 width: 100%;
 
+}
+.step1__name__error,.step1__email__error,.step1__number__error{
+color: var(--red-color);
+font-size: .9rem;
+font-weight: 600;
+text-align: end;
 }
 .label{
 
@@ -286,15 +298,19 @@ border:1px solid var(--Border-Color);
 justify-content: space-between;
 align-items:center;
 cursor: pointer;
-
+/* background-color:transparent; */
+}
+.step3__content:hover{
+    border: 1px solid var(--Purple);
+    background: var(--Very-Light-Grey );
+    transition: .2s;
 }
 .step3__content__label1{
 display: block;
 height: auto;
 }
-#check:checked + .step3__content__label1:first-child{
-background-color:#483EFF;
-}
+
+
 .step3__content__texts__box{
 display: flex;
 flex-direction: column;
@@ -399,3 +415,80 @@ text-align: center;
 color:var(--Grey-color)
 }
 /* !step5 end */
+/* !Responsive start */
+@media screen and (max-width:1000px){
+  
+    /* !header start */
+    .container__box{
+        display: flex;
+        flex-direction: column;
+        background-color:var(--bg-color)
+}
+.header{
+height: 100%;
+width: 100%;
+}
+.header__container{
+display: flex;
+flex-direction: row;
+width: 100%;
+justify-content:center;
+
+
+}
+.header__bg__img__box{
+display: flex;
+justify-content: center;
+width: 100%;
+}
+
+.header__step__text--first,.header__step__text--second,
+.header__bg__img{
+display: none;
+}
+.res__img__header{
+    display: block;
+    width: 100%;
+}
+/* !header end */
+/* !main start */
+main{
+display: flex;
+justify-content: center;
+width: 80%;
+position: relative;
+bottom: 15rem;
+background-color:var(--white-color);
+border-radius:1rem;
+margin: 0 auto;
+height: 35rem;
+}
+.step-info4{
+    padding: 1rem;
+    padding-top: 0;
+}
+.button__box__step2{
+position: relative;
+top: 10rem;
+}
+.res__bg__blue{
+display: block;
+position: absolute;
+width: 35rem;
+height: 8rem;
+background-color:var(--bg-color);
+top: -8rem;
+left: -5rem;
+
+}
+.button__box__step2{
+background-color:var(--white-color);
+width: 100%;
+}
+
+
+/* !main end */
+}
+/* !Rewsponsive end */
+
+

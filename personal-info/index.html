@@ -47,49 +47,59 @@
             alt=""
             class="header__bg__img wd--100"
           />
+          <img src="./assets/images/res__img__header.svg"
+          class="res__img__header" alt="">
         </div>
       </header>
       <!-- ! Header end -->
 
       <main>
         <!-- ! step1 start -->
-        <div class="step-info1 wd--100  ">
+        <div class="step-info1 infostep wd--100  ">
                 <div class="step1__h1__box">
                     <h1 class="step1__h1">Personal info</h1>
                     <p class="step1__h1__info">Please provide your name, email address, and phone number.</p>
                 </div>
-                <form action="" class="form wd--100">
+                <form action="" class="step1__form wd--100">
                     <label for="" class="name__label label wd--100">
                         <p class=" label__text">
                             Name</p>
-                        <input type="text" name="" id="" 
+                        <input type="text" name="name" id="name" 
                         placeholder="e.g. Stephen King" 
-                        class="text__input label__input wd--100">
+                        value="Stephen King"
+                        class="name__input label__input wd--100">
+                        <p class="step1__name__error"></p>
                     </label>
                     <label for="" class="email__label label wd--100">
                         <p class="email label__text">
                             Email Address</p>
-                        <input type="email" name="" id="" 
-                        placeholder="e.g. Stephen King"
+                        <input type="email" name="email" id="email" 
+                        placeholder="e.g. stephenking@lorem.com"
+                        value="stephenking@lorem.com"
                          class="email__input label__input wd--100">
+                        <p class="step1__email__error"></p>
+
                     </label>
                     <label for="" class="number__label label wd--100">
                         <p class="number__text label__text">Phone Number</p>
-                        <input type="number" class: name="" id="" 
-                        placeholder="e.g. Stephen King" 
+                        <input type="number"  name="number" id="number" 
+                        placeholder="e.g. +1 234 567 890" 
+                        value="+1234567890"
                         class="number__input label__input wd--100">
+                        <p class="step1__number__error"></p>
+
                     </label>
                     
+                    <div class="button__box button__box__step1 ">
+                        <button class="button button__step1">Next Step</button>
+                    </div>
                 </form>
-                <div class="button__box button__box__step1 ">
-                    <button class="button button__step1">Next Step</button>
-                </div>
                 
             </div>
         <!-- ! step1 end -->
 
         <!-- ! step2 start -->
-        <div class="step-info2 dp__none">
+        <div class="step-info2 infostep  dp__none">
           <div class="step__h1__box">
             <h1 class="step__h1">Select your plan</h1>
             <p class="step__h1__info">
@@ -147,7 +157,7 @@
         <!-- ! step2 end -->
 
         <!-- ! step3 start -->
-        <div class="step-info3 dp__none ">
+        <div class="step-info3 infostep  dp__none ">
           <div class="step__h1__box">
             <h1 class="step__h1">Pick add-ons</h1>
             <p class="step__h1__info">
@@ -158,7 +168,8 @@
             <label for="check1" class="step3__content__label1">
                 <div class="step3__content">
                   <div class="step3__content__checked__box">
-                    <input type="checkbox" class="step3__check__input" id="check1"/>
+                    <input type="checkbox" class="step3__check__input" 
+                    id="check1"/>
                   </div>
                   <div class="step3__content__texts__box">
                     <p class="step3__content__text__first">Online service</p>
@@ -177,7 +188,7 @@
               <div class="step3__content">
                 <div class="step3__content__checked__box">
                   <input type="checkbox" 
-                  class="step3__check__input" id="" />
+                  class="step3__check__input" id="check2" />
                 </div>
                 <div class="step3__content__texts__box">
                   <p class="step3__content__text__first">Online service</p>
@@ -212,6 +223,8 @@
 
 
             <div class="button__box__step2">
+              <div class="res__bg__blue"></div>
+
               <div class="go__back__button__box">
                 <p class="go__back__button">Go Back</p>
               </div>
@@ -222,7 +235,8 @@
         <!-- ! step3 end -->
 
         <!-- ! step4 start -->
-        <div class="step-info4 dp__none">
+        <div class="step-info4 infostep  dp__none
+         wd--100">
           <div class="step__h1__box">
             <h1 class="step__h1">Finishing up</h1>
             <p class="step__h1__info">
@@ -265,6 +279,7 @@
               </div>
             </div>
             <div class="button__box__step2">
+              <div class="res__bg__blue"></div>
               <div class="go__back__button__box">
                 <p class="go__back__button">Go Back</p>
               </div>
@@ -274,7 +289,7 @@
         </div>
         <!-- ! step4 end -->
         <!-- ! step5 start -->
-        <div class="step-info5  dp__none">
+        <div class="step-info5 infostep   dp__none">
           <div class="step-info5__container">
             <div class="step5__img__box">
               <img
@@ -294,5 +309,6 @@
         <!-- ! step5 end -->
       </main>
     </div>
+    <script src="./assets/js/index.js"></script>
   </body>
 </html>
